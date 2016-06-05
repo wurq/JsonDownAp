@@ -31,7 +31,7 @@ public class JsonDownAp extends AnAction implements JsonIDimp{
 
     @Override
     public void getID(String id) {
-        String queryUrl = "http://nei.hz.netease.com/api/projectView/getByProjectId?pid=";//addBlanks(selectedText);
+        String queryUrl = "http://nei.hz.netease.com/api/projectView/getByProjectId?pid=";
 
         new Thread(new RequestRunnable(queryUrl,id,mProject)).start();
     }

@@ -18,8 +18,8 @@ public class Fio {
             File filep = new File(filepath);
             filep.mkdirs();
 
-            SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd HH.mm.ss");//定义格式，不显示毫秒
-            Timestamp now = new Timestamp(System.currentTimeMillis());//获取系统当前时间
+            SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd HH.mm.ss");
+            Timestamp now = new Timestamp(System.currentTimeMillis());
             String str = df.format(now);
             File file = new File(filepath+"nei."+str+".txt");
 
