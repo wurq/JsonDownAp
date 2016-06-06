@@ -38,7 +38,7 @@ public class RequestRunnable implements Runnable  {
             HttpResponse response = client.execute(httpGet);
 
             int status = response.getStatusLine().getStatusCode();
-//            if (status >= 200 && status < 300)
+            if (status >= 200 && status < 300)
             {
                 HttpEntity resEntity = response.getEntity();
                 String json = EntityUtils.toString(resEntity, "UTF-8");
@@ -46,7 +46,7 @@ public class RequestRunnable implements Runnable  {
                 System.out.println("json = " + json);
                 showPopupBalloon("OK");
             }
-//            else
+            else
             {
                 showPopupBalloon(response.getStatusLine().getReasonPhrase());
             }
