@@ -25,7 +25,10 @@ public class JsonDownAp extends AnAction implements JsonIDimp{
         mProject = mEvent.getData(PlatformDataKeys.PROJECT);
 
         projectID projectDialog = new projectID(this);
-        projectDialog.show();
+        projectDialog.setAlwaysOnTop(true);
+        //noinspection deprecation
+        projectDialog.show(true);
+
     }
 
 

@@ -13,6 +13,7 @@ public class projectID extends JDialog
 
     public projectID(JsonIDimp jsonImp) {
         setContentPane(contentPane);
+        setSize(400,200);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
         this.setAlwaysOnTop(true);
